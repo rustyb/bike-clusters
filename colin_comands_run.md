@@ -4,7 +4,7 @@
 - NYC Bike Stations - [www.citibikenyc.com/stations/json](http://www.citibikenyc.com/stations/json)
 
 ### Data Download URL:
-Sub in **YYYYMM **with desired year. Ranges from 201307 -> 201408 as of 24.09.14
+Sub in **YYYYMM** with desired year. Ranges from 201307 -> 201408 as of 24.09.14
 
 https://s3.amazonaws.com/tripdata/YYYYMM-citibike-tripdata.zip
 
@@ -19,5 +19,16 @@ To extract the columns we want (id, lat, long) from the csv file we can run the 
 
 Now Remove the header rows from the NYC `data/nyc/stations1.txt` and save to `data/nyc_station_latlons.txt`
 
+#### House keeping
+Add the upstream branch to keep updated with any changes by @mpadge.
 
+	 git remote add upstream git@github.com:mpadge/bike-clusters.git
+
+Checkout upstream changes:
+	
+	git fetch upstream
+	
+Now to merge them into current fork run:
+	
+	git merge upstream/master -m ""
 
