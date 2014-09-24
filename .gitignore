@@ -1,0 +1,4 @@
+data/*.zip
+data/*.csv
+results/*
+.DS_Store
