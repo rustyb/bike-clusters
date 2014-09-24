@@ -2,3 +2,7 @@ data/*.zip
 data/*.csv
 results/*
 .DS_Store
+*.o
+Clusters
+NeutralClusters
+getr2
